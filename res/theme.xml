@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resource majorVersion="1" minorVersion="6" useXmlUI="false">
+    <image name="Bloque-Absent.png 1" type="multi"  />
+    <image name="Bloque-Present.png" type="multi"  />
+    <image name="Bloque-Scratched.png" type="multi"  />
+    <ui name="CheckIn" />
+    <image name="England Fencing Logo.svg" baseUrl="svg" type="svg"  />
+    <ui name="EventList" />
+    <ui name="FencerList" />
+    <image name="Gear.png" type="multi"  />
+    <ui name="SplashDialog" />
+    <theme name="Theme">
+        <val key="@includeNativeBool" value="true" />
+        <val key="EF Absent Label.bgColor" value="ff0000" />
+        <font key="EF Absent Label.font" type="system" face="0" style="1" size="0" />
+        <val key="EF Present TableHeader.bgColor" value="ff00" />
+        <val key="EF TableHeader.bgColor" value="ff0000" />
+        <border key="FencerListContainer.border" type="bevelLowered" thickness="2" color="10066431" colorB="0" colorC="0" colorD="0" />
+        <val key="SplashForm.bgColor" value="ffffff" />
+        <val key="SplashForm.derive" value="Label" />
+        <val key="SplashForm.transparency" value="0" />
+    </theme>
+</resource>

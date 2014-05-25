@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Dialog" name="SplashDialog" cloudDestinationProperty="SplashDialog" uiid="SplashForm" layout="BorderLayout" borderLayoutAbsoluteCenter="true" >
+  <component type="Label" name="Label" cloudDestinationProperty="Label" uiid="SplashForm" text="" icon="England Fencing Logo.svg" verticalAlignment="4" textPosition="0" >
+    <layoutConstraint value="Center" />
+  </component>
+</component>

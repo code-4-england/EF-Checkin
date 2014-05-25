@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Container" name="FencerList" cloudDestinationProperty="FencerList" scrollVisible="false" layout="BoxLayout" boxLayoutAxis="Y" >
+  <component type="Container" name="Container" cloudDestinationProperty="Container" uiid="FencerListContainer" layout="TableLayout" tableLayoutRows="2" tableLayoutColumns="5" >
+    <component type="Label" name="nom" cloudDestinationProperty="Label" text="nom" >
+      <layoutConstraint row="-1" column="-1" height="-1" width="40" align="-1" spanHorizontal="1" valign="-1" spanVertical="1" />
+    </component>
+    <component type="Label" name="prenom" cloudDestinationProperty="Label1" text="prenom" >
+      <layoutConstraint row="-1" column="-1" height="-1" width="15" align="-1" spanHorizontal="1" valign="-1" spanVertical="1" />
+    </component>
+    <component type="Label" name="club" cloudDestinationProperty="club" text="club" >
+      <layoutConstraint row="-1" column="-1" height="-1" width="35" align="-1" spanHorizontal="1" valign="-1" spanVertical="1" />
+    </component>
+    <component type="Label" name="ranking" cloudDestinationProperty="Label2" text="ranking" >
+      <layoutConstraint row="-1" column="-1" height="-1" width="9" align="3" spanHorizontal="1" valign="-1" spanVertical="1" />
+    </component>
+    <component type="Label" name="mode" cloudDestinationProperty="Label4" text="mode" textPosition="1" >
+      <layoutConstraint row="1" column="0" height="-1" width="-1" align="-1" spanHorizontal="4" valign="-1" spanVertical="1" />
+    </component>
+    <component type="Label" name="paiement" cloudDestinationProperty="paiement" text="paiement" >
+      <layoutConstraint row="1" column="4" height="-1" width="-1" align="-1" spanHorizontal="1" valign="-1" spanVertical="1" />
+    </component>
+  </component>
+</component>

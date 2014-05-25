@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="CheckIn" cloudDestinationProperty="CheckIn" scrollableY="false" layout="BorderLayout" borderLayoutAbsoluteCenter="false" title="Check In" >
+  <component type="Tabs" name="checkinTabs" cloudDestinationProperty="Tabs1" >
+    <layoutConstraint value="Center" />
+    <custom name="titles" type="java.lang.String" array="true" dimensions="1" >
+      <str>Absent</str>
+      <str>Present</str>
+      <str>Scratched</str>
+      <str>Settings</str>
+    </custom>
+    <custom name="icons" type="com.codename1.ui.Image" array="true" dimensions="1" >
+      <str>Bloque-Absent.png 1</str>
+      <str>Bloque-Present.png</str>
+      <str>Bloque-Scratched.png</str>
+      <str>Gear.png</str>
+    </custom>
+    <custom name="selectedIcons" type="com.codename1.ui.Image" array="true" dimensions="1" >
+      <str>Bloque-Absent.png 1</str>
+      <str>Bloque-Present.png</str>
+      <str>Bloque-Scratched.png</str>
+      <str>Gear.png</str>
+    </custom>
+    <component type="Container" name="tabAbsent" tabTitle="Absent" cloudDestinationProperty="Container" scrollVisible="false" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+      <component type="List" name="listAbsent" cloudDestinationProperty="List" uiid="Label"  selectedRenderer="FencerList" unselectedRenderer="FencerList" >
+        <layoutConstraint value="Center" />
+        <mapItems>
+          <stringItem key="club" value="club" />
+          <stringItem key="nom" value="nom" />
+          <stringItem key="paiement" value="25.00" />
+          <stringItem key="prenom" value="prenom" />
+          <stringItem key="ranking" value="123" />
+          <stringItem key="mode" value="mode" />
+        </mapItems>
+      </component>
+      <component type="Container" name="titlesAbsent" cloudDestinationProperty="Container4" uiid="EF TableHeader" layout="TableLayout" tableLayoutRows="1" tableLayoutColumns="5" >
+        <layoutConstraint value="North" />
+        <component type="Label" name="col1TitleAbsent" cloudDestinationProperty="Label2" uiid="EF Absent Label" text="Name" >
+          <layoutConstraint row="-1" column="-1" height="-1" width="40" align="-1" spanHorizontal="1" valign="-1" spanVertical="1" />
+        </component>
+        <component type="Label" name="col2TitleAbsent" cloudDestinationProperty="Label3" uiid="EF Absent Label" text="Forename" >
+          <layoutConstraint row="-1" column="-1" height="-1" width="15" align="-1" spanHorizontal="1" valign="-1" spanVertical="1" />
+        </component>
+        <component type="Label" name="col3TitleAbsent" cloudDestinationProperty="Label4" uiid="EF Absent Label" text="Affiliation" >
+          <layoutConstraint row="-1" column="-1" height="-1" width="35" align="-1" spanHorizontal="1" valign="-1" spanVertical="1" />
+        </component>
+        <component type="Label" name="col4TitleAbsent" cloudDestinationProperty="Label5" uiid="EF Absent Label" text="Seeding" >
+          <layoutConstraint row="-1" column="-1" height="-1" width="9" align="3" spanHorizontal="1" valign="4" spanVertical="1" />
+        </component>
+      </component>
+    </component>
+    <component type="Container" name="tabPresent" tabTitle="Present" cloudDestinationProperty="Container1" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+      <component type="List" name="listPresent" cloudDestinationProperty="presentList" uiid="Label"  selectedRenderer="FencerList" unselectedRenderer="FencerList" >
+        <layoutConstraint value="Center" />
+        <mapItems>
+          <stringItem key="club" value="club" />
+          <stringItem key="nom" value="nom" />
+          <stringItem key="paiement" value="25" />
+          <stringItem key="mode" value="notes" />
+          <stringItem key="ranking" value="999" />
+          <stringItem key="prenom" value="prenom" />
+        </mapItems>
+      </component>
+      <component type="Container" name="Container41" cloudDestinationProperty="Container4" uiid="EF Present TableHeader" layout="TableLayout" tableLayoutRows="1" tableLayoutColumns="5" >
+        <layoutConstraint value="North" />
+        <component type="Label" name="Label2" cloudDestinationProperty="Label2" text="Name" >
+          <layoutConstraint row="-1" column="-1" height="-1" width="40" align="-1" spanHorizontal="1" valign="-1" spanVertical="1" />
+        </component>
+        <component type="Label" name="Label3" cloudDestinationProperty="Label3" text="Forename" >
+          <layoutConstraint row="-1" column="-1" height="-1" width="15" align="-1" spanHorizontal="1" valign="-1" spanVertical="1" />
+        </component>
+        <component type="Label" name="Label4" cloudDestinationProperty="Label4" text="Affiliation" >
+          <layoutConstraint row="-1" column="-1" height="-1" width="35" align="-1" spanHorizontal="1" valign="-1" spanVertical="1" />
+        </component>
+        <component type="Label" name="Label5" cloudDestinationProperty="Label5" text="Seeding" >
+          <layoutConstraint row="-1" column="-1" height="-1" width="9" align="3" spanHorizontal="1" valign="4" spanVertical="1" />
+        </component>
+      </component>
+    </component>
+    <component type="Container" name="tabScratched" tabTitle="Scratched" cloudDestinationProperty="Container2" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+      <component type="Container" name="titlesScratched" cloudDestinationProperty="Container4" layout="TableLayout" tableLayoutRows="1" tableLayoutColumns="5" >
+        <layoutConstraint value="North" />
+        <component type="Label" name="col1TitleScratched" cloudDestinationProperty="Label2" text="Name" >
+          <layoutConstraint row="-1" column="-1" height="-1" width="30" align="-1" spanHorizontal="1" valign="-1" spanVertical="1" />
+        </component>
+        <component type="Label" name="col2TitleScratched" cloudDestinationProperty="Label3" text="Forename" >
+          <layoutConstraint row="-1" column="-1" height="-1" width="20" align="-1" spanHorizontal="1" valign="-1" spanVertical="1" />
+        </component>
+        <component type="Label" name="col3TitleScratched" cloudDestinationProperty="Label4" text="Affiliation" >
+          <layoutConstraint row="-1" column="-1" height="-1" width="15" align="-1" spanHorizontal="1" valign="-1" spanVertical="1" />
+        </component>
+        <component type="Label" name="col4TitleScratched" cloudDestinationProperty="Label5" text="Seeding" >
+          <layoutConstraint row="-1" column="-1" height="-1" width="15" align="-1" spanHorizontal="1" valign="-1" spanVertical="1" />
+        </component>
+      </component>
+      <component type="List" name="listScratched" cloudDestinationProperty="List" uiid="Label"  selectedRenderer="FencerList" unselectedRenderer="FencerList" >
+        <layoutConstraint value="Center" />
+        <mapItems>
+          <stringItem key="club" value="club" />
+          <stringItem key="nom" value="nom" />
+          <stringItem key="paiement" value="25.00" />
+          <stringItem key="mode" value="mode" />
+          <stringItem key="ranking" value="123" />
+          <stringItem key="prenom" value="prenom" />
+        </mapItems>
+      </component>
+    </component>
+    <component type="Container" name="tabSettings" tabTitle="Settings" cloudDestinationProperty="Container3" layout="BoxLayout" boxLayoutAxis="Y" >
+      <component type="ComponentGroup" name="ComponentGroup" cloudDestinationProperty="ComponentGroup" >
+        <component type="Label" name="Label11" cloudDestinationProperty="Label11" uiid="GroupElementFirst" text="Choose a Competition" >
+        </component>
+        <component type="List" name="compList" cloudDestinationProperty="EventList"  selectedRenderer="EventList" unselectedRenderer="EventList" >
+          <mapItems>
+            <stringItem key="source" value="Event Source" />
+            <stringItem key="titre_ligne" value="Event Title" />
+          </mapItems>
+        </component>
+      </component>
+      <component type="ComponentGroup" name="ComponentGroup2" cloudDestinationProperty="ComponentGroup2" >
+        <component type="Label" name="lblURL" cloudDestinationProperty="Label11" uiid="GroupElementFirst" text="Base URL" >
+        </component>
+        <component type="TextField" name="prefURL" cloudBoundProperty="text" cloudDestinationProperty="prefURL" text="http://server/json.cgi" >
+        </component>
+        <component type="Button" name="Button" cloudDestinationProperty="Button" text="Update" >
+        </component>
+      </component>
+    </component>
+  </component>
+</component>

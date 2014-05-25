@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Container" name="EventList" cloudDestinationProperty="EventList" scrollVisible="false" layout="TableLayout" tableLayoutRows="1" tableLayoutColumns="3" >
+  <component type="Label" name="id" cloudDestinationProperty="id" text="id" verticalAlignment="4" textPosition="1" >
+    <layoutConstraint row="-1" column="0" height="-1" width="-1" align="-1" spanHorizontal="1" valign="-1" spanVertical="1" />
+  </component>
+  <component type="Label" name="titre_ligne" cloudDestinationProperty="titre_ligne" text="titre_ligne" verticalAlignment="4" >
+    <layoutConstraint row="-1" column="1" height="-1" width="-1" align="-1" spanHorizontal="1" valign="-1" spanVertical="1" />
+  </component>
+  <component type="Label" name="source" cloudDestinationProperty="source" text="source" verticalAlignment="4" >
+    <layoutConstraint row="-1" column="2" height="-1" width="-1" align="-1" spanHorizontal="1" valign="-1" spanVertical="1" />
+  </component>
+</component>
